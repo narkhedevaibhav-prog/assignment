@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <classes>
+      <class name="org.sample.smoke.LoginTest2">
+        <methods>
+          <include name="setUp"/>
+          <include name="flushReport"/>
+          <include name="clear"/>
+          <include name="LoginAndLogoutFuncitonality" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="tearDown"/>
+          <include name="Setup"/>
+          <include name="initiatePropertyFile"/>
+          <include name="reportSetup"/>
+        </methods>
+      </class> <!-- org.sample.smoke.LoginTest2 -->
+      <class name="org.sample.smoke.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="clear"/>
+          <include name="flushReport"/>
+          <include name="tearDown"/>
+          <include name="Setup"/>
+          <include name="LoginAndLogoutFuncitonality" invocation-numbers="2"/>
+          <include name="closeBrowser"/>
+          <include name="reportSetup"/>
+          <include name="initiatePropertyFile"/>
+        </methods>
+      </class> <!-- org.sample.smoke.LoginTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

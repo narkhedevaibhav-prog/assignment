@@ -1,0 +1,208 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>3/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Nov 12 16:43:37 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>39 seconds (39650 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.sample.smoke.LoginTest2.LoginAndLogoutFuncitonality()'><b>LoginAndLogoutFuncitonality</b><br>Test class: org.sample.smoke.LoginTest2<br>Test method: Login and Logout functionality <br>Parameters: Test Case1, student, r9gdQ5BEzrFN6LImNzZHSATL3PYg97Bl, with incorrect credentials</td>
+<td><div><pre>java.lang.AssertionError: Test terminated due to exception: Login Failed
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.framework.logger.FrameworkServiceManager.exception(FrameworkServiceManager.java:41)
+	at org.application.steps.LoginPage.validateLoginFunctionality(LoginPage.java:51)
+	at org.sample.smoke.LoginTest2.LoginAndLogoutFuncitonality(LoginTest2.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1451487163", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1451487163'><pre>java.lang.AssertionError: Test terminated due to exception: Login Failed
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.framework.logger.FrameworkServiceManager.exception(FrameworkServiceManager.java:41)
+	at org.application.steps.LoginPage.validateLoginFunctionality(LoginPage.java:51)
+	at org.sample.smoke.LoginTest2.LoginAndLogoutFuncitonality(LoginTest2.java:46)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</pre></div></td>
+<td>4</td>
+<td>org.sample.smoke.LoginTest2@3571b748</td></tr>
+<tr>
+<td title='org.sample.smoke.LoginTest.LoginAndLogoutFuncitonality()'><b>LoginAndLogoutFuncitonality</b><br>Test class: org.sample.smoke.LoginTest<br>Test method: Login and Logout functionality<br>Parameters: Test Case5, studen, r9gdQ5BEzrFN6LImNzZHSATL3PYg97Bl, with incorrect Username</td>
+<td><div><pre>java.lang.AssertionError: Test terminated due to exception: Login Failed
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.framework.logger.FrameworkServiceManager.exception(FrameworkServiceManager.java:41)
+	at org.application.steps.LoginPage.validateLoginFunctionality(LoginPage.java:51)
+	at org.sample.smoke.LoginTest.LoginAndLogoutFuncitonality(LoginTest.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1514479002", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1514479002'><pre>java.lang.AssertionError: Test terminated due to exception: Login Failed
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.framework.logger.FrameworkServiceManager.exception(FrameworkServiceManager.java:41)
+	at org.application.steps.LoginPage.validateLoginFunctionality(LoginPage.java:51)
+	at org.sample.smoke.LoginTest.LoginAndLogoutFuncitonality(LoginTest.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</pre></div></td>
+<td>1</td>
+<td>org.sample.smoke.LoginTest@37f1104d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='org.sample.smoke.LoginTest2.LoginAndLogoutFuncitonality()'><b>LoginAndLogoutFuncitonality</b><br>Test class: org.sample.smoke.LoginTest2<br>Test method: Login and Logout functionality <br>Parameters: Test Case2, student, V2fcGf69cXD6chVeudHRLafV7X5Pn9p5, with correct credentials</td>
+<td></td>
+<td>4</td>
+<td>org.sample.smoke.LoginTest2@3571b748</td></tr>
+<tr>
+<td title='org.sample.smoke.LoginTest.LoginAndLogoutFuncitonality()'><b>LoginAndLogoutFuncitonality</b><br>Test class: org.sample.smoke.LoginTest<br>Test method: Login and Logout functionality<br>Parameters: Test Case3, student, V2fcGf69cXD6chVeudHRLafV7X5Pn9p5, with correct Password</td>
+<td></td>
+<td>6</td>
+<td>org.sample.smoke.LoginTest@37f1104d</td></tr>
+<tr>
+<td title='org.sample.smoke.LoginTest.LoginAndLogoutFuncitonality()'><b>LoginAndLogoutFuncitonality</b><br>Test class: org.sample.smoke.LoginTest<br>Test method: Login and Logout functionality<br>Parameters: Test Case4, student, V2fcGf69cXD6chVeudHRLafV7X5Pn9p5, with correct credentials</td>
+<td></td>
+<td>3</td>
+<td>org.sample.smoke.LoginTest@37f1104d</td></tr>
+</table><p>
+</body>
+</html>
